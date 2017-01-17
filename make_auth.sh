@@ -10,7 +10,7 @@ sudo pip install --upgrade virtualenv
 #Create virtual environment .env
 virtualenv .env
 source .env/bin/activate
-sudo pip install -r requirements.txt
+pip install -r requirements.txt
 
 #create executable
 echo -e "cd $PWD\nsource .env/bin/activate\npython template_filler.py" >> run.command
