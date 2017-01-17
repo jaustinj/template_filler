@@ -1,5 +1,8 @@
 #!/bin/bash
 
+#make sure pip is installed
+sudo easy_install pip
+
 #make sure virtualenv is installed
 sudo pip install virtualenv
 sudo pip install --upgrade virtualenv
