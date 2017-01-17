@@ -2,18 +2,13 @@ import os
 import sys
 import pandas as pd
 import trackDash as td
-import TubularRC as trc
 
 reload(sys)
-
 sys.setdefaultencoding('UTF8')
-print sys.getdefaultencoding()
-
-sys.warnoptions
 
 #Prompt User for filename
 path_to_desktop = os.path.expanduser('~') + '/Desktop/'
-file_name = path_to_desktop + trc.get_filename()
+file_name = path_to_desktop + td.get_filename()
 
 
 #Import Track Dashboard Information

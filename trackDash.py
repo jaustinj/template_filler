@@ -9,6 +9,14 @@ def file_choose():
     filename = tkFileDialog.askopenfilename()
     return filename
 
+def get_filename():
+    file_name = raw_input('What would you like to name your xlsx?')
+    if file_name is '':
+        file_name = 'default'
+    file_name = str(file_name)
+    file_name = file_name + '.xlsx'
+    return file_name
+
 
 class TrackExport(object):
     def __init__(self, csv_file):
